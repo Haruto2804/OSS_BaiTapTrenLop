@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "Nhập a: " a
+read -p "Nhập b: " b
+
+if [ "$a" -eq 0 ] || [ "$b" -eq 0 ]; then
+    echo "Có ít nhất một số bằng 0, không xét cùng dấu hay trái dấu."
+elif [ $((a * b)) -gt 0 ]; then
+    echo "$a và $b cùng dấu."
+else
+    echo "$a và $b trái dấu."
